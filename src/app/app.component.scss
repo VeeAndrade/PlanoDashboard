@@ -1,0 +1,15 @@
+.header {
+  font-family: 'Lobster', cursive;
+  font-size: 2.4em;
+  font-weight: lighter
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(43, 40, 40, 0.386); 
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 10%;
+}
