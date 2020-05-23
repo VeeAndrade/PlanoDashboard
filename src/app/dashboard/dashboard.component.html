@@ -1,0 +1,56 @@
+<mat-tab-group animationDuration="0ms">
+  <mat-tab label="Request Logs" class="tab-labels">
+    <table mat-table [dataSource]="dataSourceArray1" class="data-table">
+      <ng-container matColumnDef="requestid">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Id# </th>
+        <td mat-cell *matCellDef="let requestLogs" class="data-cell-element id"> {{requestLogs.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="service">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Service </th>
+        <td mat-cell *matCellDef="let requestLogs" class="data-cell-element service"> {{requestLogs.service}} </td>
+      </ng-container>
+      <ng-container matColumnDef="version">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Version </th>
+        <td mat-cell *matCellDef="let requestLogs" class="data-cell-element version"> {{requestLogs.version || "N/A"}} </td>
+      </ng-container>
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Action</th>
+        <td mat-cell *matCellDef="let requestLogs" class="data-cell-element action"> {{requestLogs.action}} </td>
+      </ng-container>
+      <ng-container matColumnDef="result">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Result </th>
+        <td mat-cell *matCellDef="let requestLogs" class="data-cell-element results" > {{requestLogs.result}} </td>
+      </ng-container>
+      <ng-container matColumnDef="created_at">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name">Created at</th>
+        <td mat-cell *matCellDef="let requestLogs" class="data-cell-element created-at"> {{requestLogs.created_at}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="requestDisplayedColumns"></tr>
+      <tr mat-row *matRowDef="let requestLogs; columns: requestDisplayedColumns"></tr>
+    </table>
+  </mat-tab>
+  <mat-tab label="Error Logs" color="primary"class="tab-labels">
+    <table mat-table [dataSource]="dataSourceArray2" class="data-table">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Id# </th>
+        <td mat-cell *matCellDef="let errorLogs" class="data-cell-element id-cell"> {{errorLogs.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="error">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Error Message </th>
+        <td mat-cell *matCellDef="let errorLogs" class="data-cell-element error-message"> {{errorLogs.error}} </td>
+      </ng-container>
+      <ng-container matColumnDef="backtrace">
+        <th mat-header-cell *matHeaderCellDef class="cel-headers-name"> Backtrace </th>
+        <td mat-cell *matCellDef="let errorLogs" class="data-cell-element backtrace-cell" >
+          <p>{{errorLogs.backtrace[0]}}</p>
+          <p>{{errorLogs.backtrace[1]}}</p>
+          <p>{{errorLogs.backtrace[2]}}</p>
+          <p>{{errorLogs.backtrace[3]}}</p>
+          <p>{{errorLogs.backtrace[4]}}</p>          
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="errorDisplayedColumns"></tr>
+      <tr mat-row *matRowDef="let errorLogs; columns: errorDisplayedColumns"></tr>
+    </table>
+  </mat-tab>
+</mat-tab-group>
