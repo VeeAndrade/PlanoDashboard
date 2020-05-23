@@ -1,0 +1,53 @@
+.backtrace-cell {
+  height: 200px;
+  overflow: scroll;
+  max-width: 27rem;
+  overflow-y: scroll
+}
+
+.cel-headers-name {
+  color: #ED4723;
+  width: 200px;
+  font-size: 1em;
+  font-family: 'Montserrat',
+  sans-serif;
+  font-weight: bold;
+}
+
+.data-cell-element {
+  font-family: 'Montserrat',
+  sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.error-message {
+  max-width: 39rem;
+}
+
+
+// I started to realize aftyer many attempts in media queries that there
+// had to be a better way of implementing responsive web design
+// I even looked into breakpoint observer and couldn't quite figure it out.
+
+@media only screen and (max-width: 835px) {
+  .backtrace-cell {
+    max-width: 15rem;
+  }
+
+  .cel-headers-name {
+    width: 150px;
+    font-size: 1em;
+  }
+  
+  .error-message {
+    max-width: 15rem;
+    padding: 1%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cell-headers-name {
+    font-size: .5em;
+    width: 120px;
+  }
+}
