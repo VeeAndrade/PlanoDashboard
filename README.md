@@ -2,13 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
-#### **Objective**: At PlanOmatic we have a central backend endpoint application named PlanoCore. Because PlanoCore receives so many requests and some of them result in application errors it would be helpful for your development team if we had a stylish frontend application for seeing the most recent logs.
-
-#### Screenshot
-Finished UI
-<img width="1440" alt="Screen Shot 2020-05-22 at 11 02 06 PM" src="https://user-images.githubusercontent.com/51575613/82854679-68f7b980-9ec6-11ea-8140-7393ce7a0d20.png">
-
-<img width="1440" alt="Screen Shot 2020-05-22 at 10 56 02 PM" src="https://user-images.githubusercontent.com/51575613/82854684-6d23d700-9ec6-11ea-972e-469a97994844.png">
+#### Objective: 
+At PlanOmatic we have a central backend endpoint application named PlanoCore. Because PlanoCore receives so many requests and some of them result in application errors it would be helpful for your development team if we had a stylish frontend application for seeing the most recent logs.
 
 #### Run Locally:
 
@@ -19,3 +14,7 @@ Finished UI
  - Run ``npm install``
  - Run `ng serve` for a dev server.
  -  Navigate to `http://localhost:4200/` .
+
+#### Screenshot
+Finished UI
+<img width="1440" alt="Screen Shot 2020-05-22 at 11 02 06 PM" src="https://user-images.githubusercontent.com/51575613/82854679-68f7b980-9ec6-11ea-8140-7393ce7a0d20.png">
