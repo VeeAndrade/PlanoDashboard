@@ -1,13 +1,21 @@
 .backtrace-cell {
   height: 200px;
-  overflow: scroll;
   max-width: 27rem;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
 .cel-headers-name {
-  color: #ED4723;
+  color: rgb(237, 129, 35);
   width: 200px;
+  font-size: 1em;
+  font-family: 'Montserrat',
+  sans-serif;
+  font-weight: bold;
+}
+
+.cel-headers-name-id {
+  color: rgb(237, 129, 35);
+  width: 100px;
   font-size: 1em;
   font-family: 'Montserrat',
   sans-serif;
