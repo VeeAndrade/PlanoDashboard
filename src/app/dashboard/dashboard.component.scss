@@ -32,6 +32,11 @@
   max-width: 39rem;
 }
 
+.mat-row:hover {
+  background-color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+
 
 // I started to realize aftyer many attempts in media queries that there
 // had to be a better way of implementing responsive web design
