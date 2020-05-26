@@ -1,27 +1,21 @@
-# PlanomaticTechChallenge
+### PlanoDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
-## Development server
+#### **Objective**: At PlanOmatic we have a central backend endpoint application named PlanoCore. Because PlanoCore receives so many requests and some of them result in application errors it would be helpful for your development team if we had a stylish frontend application for seeing the most recent logs.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Screenshot
+Finished UI
+<img width="1440" alt="Screen Shot 2020-05-22 at 11 02 06 PM" src="https://user-images.githubusercontent.com/51575613/82854679-68f7b980-9ec6-11ea-8140-7393ce7a0d20.png">
 
-## Code scaffolding
+<img width="1440" alt="Screen Shot 2020-05-22 at 10 56 02 PM" src="https://user-images.githubusercontent.com/51575613/82854684-6d23d700-9ec6-11ea-972e-469a97994844.png">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Run Locally:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Clone this repo to your local machine
+ ``git@github.com:VeeAndrade/PlanoDashboard.git``
+ - Change the working directory to the repo directory
+ ``cd PlanoDashboard``
+ - Run ``npm install``
+ - Run `ng serve` for a dev server.
+ -  Navigate to `http://localhost:4200/` .
